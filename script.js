@@ -69,17 +69,17 @@ function createbutton(bttag,bttype,btvalue,btid,btclassname,name) {
            })
   return button;
 }
-var outputView = document.getElementById("result");
+var output = document.getElementById("result");
 
 function display(num)
 {
-    outputView.value+=num;
+    output.value+=num;
    
 }
 
 function equal(val){
     try{
-        outputView.value = eval(outputView.value);
+        output.value = eval(output.value);
     }
     catch(eror){
         alert("Only numbers are allowed")
@@ -90,10 +90,10 @@ function equal(val){
 }
 function del()
 {
-    outputView.value = outputView.value.slice(0,-1);
+    output.value = output.value.slice(0,-1);
 }
 
     function Clear()
     {
-        outputView.value = ""
+        output.value = ""
     }
