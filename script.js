@@ -235,7 +235,7 @@ equ.addEventListener("click",()=>{
    
     try {
         calculate.value = eval(calculate.value);
-        console.log(a);
+        
         a=calculate.value;
     } catch (error) {
         alert("only numbers are allowed");
@@ -261,33 +261,3 @@ let button0=document.getElementById("btn0");
 
 var calculate=document.getElementById("result");
 
-// var  try {
-//     calculate = eval(calculate);
-// } catch (error) {
-//     alert("only numbers are allowed");
-// }=document.getElementById("txt-box").value;
-// // var sum="";
-// function display(values) {
-    
-  
-//     sum=sum+calculate;
-   
-// }
-
-// function equal(equa){
-//     try {
-//         calculate.value = eval(calculate.value);
-//     } catch (error) {
-//         alert("only numbers are allowed");
-//     }
-// }
-
-// function Clear()
-//     {
-//         calculate = ""
-//     }
-
-//     function dele ()
-// {
-//     calculate = calculate.slice(0,-1);
-// }
