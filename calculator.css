@@ -1,0 +1,157 @@
+body{
+    background-color: bisque;
+}
+.container{
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 7%;
+    border: none;
+    box-shadow: inset -5px -5px 12px rgba(234, 226, 226, 0.867),
+                       3px  3px rgba(0,0,0,.16);
+                       
+    border-radius: 10px;
+    background-color: aqua;
+}
+#display-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 80%;
+    box-shadow: inset -5px -5px 12px #fff,
+                inset  5px 5px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px; 
+    /* color: rgb(red,green,blue); */
+    color: black;
+    text-align: start;
+    font-size: 400%;
+    padding: 1%;
+    font-weight: 400;
+}
+
+#display-number{   
+    display: grid;
+    justify-content: space-between;
+    align-items: center;    
+    grid-template-columns: repeat(4,70px);
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 50%;
+}
+
+.btn{
+    border: none;
+    box-shadow: inset -5px -5px 12px #fff,
+                  5px 5px rgba(0,0,0,.16);
+    height: 50px;
+   width: 100%;
+   border-radius: 50%;
+   color: rgb(red,green,blue);
+   font-size: 125%;
+   margin-bottom: 30%;
+   cursor: pointer;
+   /* background-color: aquamarine; */
+}
+.btn:hover{
+    width: 120%;
+}
+.text-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        width:auto;
+        overflow: hidden;
+         border: none ;
+        box-shadow: inset -5px -5px 12px rgba(234, 226, 226, 0.867),
+                           3px  3px rgba(0,0,0,.16);
+        margin: 0%;                   
+        border-radius: 10px;
+    }
+
+    #display-input{
+       
+        width: 100%;
+    }
+    #result{
+        width: 80%;
+        height: 80%;
+        box-shadow: inset -5px -5px 12px #fff,
+                    inset  5px 5px rgba(0,0,0,.16);
+        border: none;
+        border-radius: 30px; 
+        color: rgb(red,green,blue);
+        text-align: start;
+        font-size: 400%;
+        padding: 1%;
+    }
+    #display-number{   
+        display: grid; 
+        grid-template-columns: repeat(4,70px);
+        width: auto;
+        margin: 0%;
+        
+    }
+    .btn{
+        border: none;
+        box-shadow: inset -5px -5px 12px #fff,
+                      5px 5px rgba(0,0,0,.16);
+       
+       height: 50px;
+       border-radius: 50%;
+       color: rgb(red,green,blue);
+       font-size: 100%;
+       width: 100%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #display-number{   
+        display: grid; 
+        grid-template-columns: repeat(4,50px);
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    .btn{
+        margin-bottom: 30%;
+    }
+
+}
+@media screen and (min-width: 900px) and (max-width: 1024px){
+    .btn{
+        margin-bottom: 30%;
+        height: 60px;
+    }
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+    .btn{
+        margin-bottom: 30%;
+        height: 60px;
+    }
+
+}
+@media screen and (min-width: 2160px) and (max-width: 2560px){
+    .btn{
+        margin-bottom: 40%;
+        height: 110px;
+        width: 100px;
+        font-size: 250%;
+    }
+
+
+#result{
+    height: 100px;
+}
+}
